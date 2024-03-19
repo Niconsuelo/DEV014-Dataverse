@@ -1,26 +1,25 @@
 export const renderItems = (data) => {
-  console.log(data);
-  // Aquí comienza tu código y puedes retornar lo que tu necesites
+  const ul = document.createElement("ul");
+  data.forEach((character) => {
+    const li = `
+      <li itemscope itemtype="Personaje" id=${character.id}>
+      <div class="card">
+        <div class="card-container "> 
+        <img src=${character.imageUrl} alt=${character.name} class=" card img">
+        
 
-  const cards = document.createElement('ul'); // crea elemento tipo ul
-  cards.className = "no-list-style"; //agregar class al ul
-  data.forEach(character => {
-    const renderCharacter = `
-    <li id="${character.id}">
-      <div class="card-container">
-        <img src="${character.imageUrl}" alt="${character.name}" class="card-img">
-        <h3 class="card-title">${character.name}</h3>
-        <div class="card-text">${character.description}</div>
+        <div class="card-text">
+        <h3 itemprop="name" class="card-tittle">${character.name}</h3>
+          <div itemprop="nenType"><strong>Tipo de Nen:</strong>${character.facts.nenType}</div>
+          <div itemprop="ocupation"><strong>Ocupación:</strong>${character.facts.ocupation}</div>
+          <div itemprop="abilities"><strong>Habilidades:</strong>${character.extraInfo.abilities}</div>
+        </div>
+        </div>
       </div>
-      </li>
+    </li>
     `;
-    //agrega al ul el string creado
-    cards.insertAdjacentHTML('beforeend', renderCharacter); //propiedad que crea elemento html dado un string
-    
-
-    //container.innerHTML += cardHTML; // Inserta cada tarjeta en el contenedor
+    ul.innerHTML = ul.innerHTML + li; // Inserta cada tarjeta en el contenedor
   });
-  document.body.appendChild(cards);
- 
 
+  return ul;
 };

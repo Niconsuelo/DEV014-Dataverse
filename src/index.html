@@ -9,23 +9,26 @@
   <body>
     <header> 
       <nav>
-      <h1>Hunter X Hunter banner</h1> <!--AGREGAR AQUÍ IMÁGEN DEL BANNER-->
+      <h1>Hunter X Hunter </h1> <!--AGREGAR AQUÍ IMÁGEN DEL BANNER-->
      
+        <label for="sort-by">Ordenar por: </label>
         <select name="sortBy" id="sort-by">
           <option value="" disabled selected>---</option>
           <option value="asc">Asc [A-Z]</option>
           <option value="desc">Desc [Z-A]</option>
         </select>
+
         <label for="filter-ocupation">Ocupación: </label>
-        <select name="filterByOcupation" id="filter-ocupation" placeholder="Ocupación">
+        <select name="filterByOcupation" id="filter-ocupation">
           <option value="" disabled selected>Seleccionar</option>
           <option value="cazador">Cazador</option>
           <option value="hormigaQuimera">Hormiga Quimera</option>
           <option value="asesino">Asesino</option>
           <option value="brigadaFantasma">Brigada Fantasma</option>
         </select>
+
         <label for="filter-nen">Tipo de Nen: </label>
-        <select name="filterByNen" id="filter-nen" placeholder="Nen">
+        <select name="filterByNen" id="filter-nen">
           <option value="" disabled selected>Seleccionar</option>
           <option value="intensification">Intensificación</option>
           <option value="transmutation">Transmutación</option>
@@ -34,47 +37,13 @@
           <option value="manipulation">Manipulación</option>
           <option value="specialization">Especialización</option>
         </select>
-        <!--label for="cleaner-button">LIMPIAR FILTROS</label-->
+        <!-- <label for="cleaner-button"></label> -->
         <button id="cleaner-button">LIMPIAR FILTROS</button>
           <!--Recordar button para visualizar estadísticas-->
       </nav>
     </header>
-    <main>
+    <main >
       <h2 id="root"></h2>
-    
-<ul class="no-list-style">
-  <li id="01-gon">
-    <div class="card">
-           
-      <h3 class="card-tittle">Gon Freecss</h3>
-      <div class="card-container "> 
-      <img src="https://i.ibb.co/c2VRrW9/gon.png" alt="Gon Freecss" class=" card img">
-    
-      <div class="card-text">
-        <div><strong>Tipo de Nen:</strong> Emisor</div>
-        <div><strong>Ocupación:</strong> Cazador</div>
-        <div><strong>Habilidades:</strong> Jajanken</div>
-      </div>
-      </div>
-    </div>
-  </li>
-
-  <li id="02-kurapika">
-    <div class="card">
-           
-      <h3 class="card-tittle">Kurapika</h3>
-      <div class="card-container "> 
-      <img src="https://i.ibb.co/NjnpmwH/image.png" alt="Kurapika" class=" card img">
-    
-      <div class="card-text">
-        <div><strong>Tipo de Nen:</strong> Especialista</div>
-        <div><strong>Ocupación:</strong> Cazador</div>
-        <div><strong>Habilidades:</strong> Cadena de juramentoƒ</div>
-      </div>
-      </div>
-    </div>
-  </li>
-</ul>
     </main>
     <footer> 2024 &copy; Hunter X Verse</footer>
     <script src="main.js" type="module"></script>

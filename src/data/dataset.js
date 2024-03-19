@@ -19,7 +19,7 @@ export default [
     "name": "Kurapika",
     "shortDescription": "Es uno de los cuatro protagonistas principales de la serie. Busca vengaza por su sangriento pasado.",
     "description": "Kurapika es el único sobreviviente de la tribu Kurta, teniendo como peculiaridad sus ojos escarlata, motivo por el cual su tribu fue asesinada por la Brigada Fantasma. Kurapika desea convertirse en Cazador, concretamente «Cazador de Listas Negras» para vengarse de ellos y recuperar los ojos de su gente. Destaca por su inteligencia, moral, serenidad y por ser muy equilibrado en todos los aspectos físicos. Sin embargo, en muchas ocasiones él ha dejado esta serenidad de lado al sentir rabia u odio, volviéndose una persona impulsiva y temperamental. Es el único del grupo que ha logrado desarrollar su Nen al completo.",
-    "imageUrl": "https://i.pinimg.com/originals/c6/88/1a/c6881a58d7d976f2a40ec0a7646b35c0.jpg",
+    "imageUrl": "https://i.ibb.co/CtHqhLQ/Kurapika.jpg",
     "facts": {
       "nenType": "Materializador", // "Especialista" * EVALUAR POSIBILIDAD DE QUE ESTE VALOR SEA UN ARRAY
       "ocupation": "Cazador",
