@@ -2,20 +2,25 @@ export const renderItems = (data) => {
   console.log(data);
   // Aquí comienza tu código y puedes retornar lo que tu necesites
 
-  const body = document.body;
-  const ul = document.createElement("ul");
-  const li = document.createElement("li"); // <h1></h1>
-  const texto = document.createTextNode("Hola Bella");
-  li.appendChild(texto); // al h1 le agrego un hijo texto  // <h1>Hola Bella</h1>
+  const cards = document.createElement('ul'); // crea elemento tipo ul
+  cards.className = "no-list-style"; //agregar class al ul
+  data.forEach(character => {
+    const renderCharacter = `
+    <li id="${character.id}">
+      <div class="card-container">
+        <img src="${character.imageUrl}" alt="${character.name}" class="card-img">
+        <h3 class="card-title">${character.name}</h3>
+        <div class="card-text">${character.description}</div>
+      </div>
+      </li>
+    `;
+    //agrega al ul el string creado
+    cards.insertAdjacentHTML('beforeend', renderCharacter); //propiedad que crea elemento html dado un string
+    
 
-  body.appendChild(li);
-
-  body.appendChild(ul);
-
-  data.forEach((element) => {
-    console.log(element.extraInfo.abilities); 
+    //container.innerHTML += cardHTML; // Inserta cada tarjeta en el contenedor
   });
+  document.body.appendChild(cards);
+ 
 
-  console.log(body);
-  return ul;
 };
