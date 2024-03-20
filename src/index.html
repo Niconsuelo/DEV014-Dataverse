@@ -12,31 +12,36 @@
   </head>
   <body>
     <header>
-      <h1>HUNTER X HUNTER</h1>
+      <img
+        src="https://i.ibb.co/CMH1wQH/image.png"
+        alt="image"
+        class="align-background"
+      />
+      <h1></h1>
       <!--AGREGAR AQUÍ IMÁGEN DEL BANNER-->
     </header>
     <main>
-      <nav>
-        <div class="barra-filtros">
-          <label for="sort-by">Ordenar por: </label>
+      <nav class="barra-filtros">
+        <div>
+          <label for="sort-by"></label>
           <select name="sortBy" id="sort-by">
-            <option value="" disabled selected>---</option>
+            <option value="" disabled selected>ORDENAR POR</option>
             <option value="asc">Asc [A-Z]</option>
             <option value="desc">Desc [Z-A]</option>
           </select>
 
-          <label for="filter-ocupation">Ocupación: </label>
+          <label for="filter-ocupation"></label>
           <select name="filterByOcupation" id="filter-ocupation">
-            <option value="" disabled selected>Seleccionar</option>
+            <option value="" disabled selected>OCUPACIÓN</option>
             <option value="cazador">Cazador</option>
             <option value="hormigaQuimera">Hormiga Quimera</option>
             <option value="asesino">Asesino</option>
             <option value="brigadaFantasma">Brigada Fantasma</option>
           </select>
 
-          <label for="filter-nen">Tipo de Nen: </label>
+          <label for="filter-nen"></label>
           <select name="filterByNen" id="filter-nen">
-            <option value="" disabled selected>Seleccionar</option>
+            <option value="" disabled selected>TIPO DE NEN</option>
             <option value="intensification">Intensificación</option>
             <option value="transmutation">Transmutación</option>
             <option value="materialization">Materialización</option>
@@ -46,8 +51,8 @@
           </select>
           <!-- <label for="cleaner-button"></label> -->
           <button id="cleaner-button">LIMPIAR FILTROS</button>
+          <!--Recordar button para visualizar estadísticas-->
         </div>
-        <!--Recordar button para visualizar estadísticas-->
       </nav>
       <h2 id="root"></h2>
     </main>

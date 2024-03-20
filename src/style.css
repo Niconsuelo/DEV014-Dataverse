@@ -2,23 +2,39 @@
   font-family: "Tomorrow", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #000000;
 }
 header {
-  background-image: url("https://i.ibb.co/4tgKg16/HUNTERHUNTER1.png");
+  background-image: url("https://i.ibb.co/vBJWFrr/image.png");
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-size: cover;
-  height: 150px;
+  height: 155px;
   object-fit: cover;
 }
-.barra-filtros {
-  flex: 1; /* Hace que el contenedor llene el espacio restante */
-  display: flex; /* Usa Flexbox */
-  flex-direction: row; /* Organiza los hijos en una columna */
-  justify-content: space-between; /* Centra el contenido verticalmente */
-  
+.align-background {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 155px; /* Ajusta según sea necesario */
+  margin: 0 auto;
 }
 
+nav {
+  background-color: #000000;
+  height: 30px;
+}
+.barra-filtros {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  padding: 8px;
+
+}
+select {
+  width: 167px;
+  background-color: #000000;
+  color:#ffffff;
+  font-size: small;
+}
 
 body {
   background-image: url("https://i.ibb.co/jypWMsT/1.png");
@@ -53,7 +69,7 @@ footer {
   border-radius: 10px; /* Bordes redondeados */
   overflow: hidden; /* Asegura que el contenido no desborde */
   flex-direction: column; /* Organiza los li en una columna */
-  margin: 30px; /*Agrega un margen alrededor de las tarjetas*/
+  margin: 40px; /*Agrega un margen alrededor de las tarjetas*/
   align-items: center; /* Centra los elementos horizontalmente */
   justify-content: center; /* Centra los elementos verticalmente */
   background: linear-gradient(
@@ -91,7 +107,7 @@ footer {
   justify-content: space-between; /* Centra el contenido verticalmente */
 }
 
-h3 {
+h1 {
   font-size: 18px; /* Tamaño de la fuente para el título */
   text-transform: uppercase;
   background-color: #ffffff;
@@ -110,6 +126,7 @@ h3 {
   text-transform: uppercase;
   text-align: justify;
   line-height: 180%;
+  color: #000000;
 }
 
 .align-nen {
