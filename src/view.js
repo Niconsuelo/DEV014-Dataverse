@@ -5,14 +5,15 @@ export const renderItems = (data) => {
       <li itemscope itemtype="Personaje" id=${character.id}>
       <div class="card">
         <div class="card-container "> 
-        <img src=${character.imageUrl} alt=${character.name} class=" card img">
+        <img src=${character.imageUrl} alt=${character.name} class="card-img"/>
         
+        <img src="https://i.ibb.co/hMkG8x7/92cd183e-5e0b-4277-90c0-2c79d98b6199.jpg" alt="92cd183e-5e0b-4277-90c0-2c79d98b6199" border="0" class="img-barcode"/>
 
         <div class="card-text">
-        <h3 itemprop="name" class="card-tittle">${character.name}</h3>
-          <div itemprop="nenType"><strong>Tipo de Nen:</strong>${character.facts.nenType}</div>
-          <div itemprop="ocupation"><strong>Ocupación:</strong>${character.facts.ocupation}</div>
-          <div itemprop="abilities"><strong>Habilidades:</strong>${character.extraInfo.abilities}</div>
+        <h3 itemprop="name">${character.name}</h3>
+          <div itemprop="nenType"><strong class="align-nen">Tipo de Nen:</strong>${character.facts.nenType}</div>
+          <div itemprop="ocupation"><strong class="align-ocupation">Ocupación:</strong>${character.facts.ocupation}</div>
+          <div itemprop="abilities"><strong class="align-tec">Habilidades:</strong>${character.extraInfo.abilities}</div>
         </div>
         </div>
       </div>

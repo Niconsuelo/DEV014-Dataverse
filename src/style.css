@@ -1,0 +1,125 @@
+* {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+}
+header {
+  background-image: url("https://i.ibb.co/4tgKg16/HUNTERHUNTER1.png");
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: cover;
+  height: 150px;
+  object-fit: cover;
+}
+.barra-filtros {
+  flex: 1; /* Hace que el contenedor llene el espacio restante */
+  display: flex; /* Usa Flexbox */
+  flex-direction: row; /* Organiza los hijos en una columna */
+  justify-content: space-between; /* Centra el contenido verticalmente */
+  
+}
+
+
+body {
+  background-image: url("https://i.ibb.co/jypWMsT/1.png");
+}
+
+ul {
+  list-style-type: none; /* Elimina los puntos de todos los <li> dentro de este <ul> */
+  display: flex; /* Habilita Flexbox */
+  flex-wrap: wrap; /* Permite que los ítems se pasen a la siguiente línea si no hay espacio */
+  justify-content: space-around; /* Distribuye el espacio entre y alrededor de los elementos de forma uniforme */
+  padding: 0; /* Elimina el padding predeterminado */
+}
+
+h1 {
+  text-align: center;
+  font-size: xx-large;
+}
+
+footer {
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  height: 60px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.card {
+  /*da estilo a la card en general */
+  width: 290px; /* Ancho de la tarjeta */
+  height: 480px; /* Altura fija de la tarjeta */
+  border-radius: 10px; /* Bordes redondeados */
+  overflow: hidden; /* Asegura que el contenido no desborde */
+  flex-direction: column; /* Organiza los li en una columna */
+  margin: 30px; /*Agrega un margen alrededor de las tarjetas*/
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente */
+  background: linear-gradient(
+    to bottom,
+    #000000 60%,
+    #5daad8 40%
+  ); /* División dos colores */
+  border: 2px solid #000000;
+}
+
+.card-img {
+  /* da formato a la imagen */
+  width: 200px; /* Ancho fijo para todas las imágenes */
+  height: 160px; /* Altura fija para todas las imágenes */
+  object-fit: cover; /* Asegura que la imagen no se distorsionarse */
+  /* display: block; /* Asegura que la imagen no tenga espacio extra abajo */
+  margin: 15px auto 0; /*permite que se centre la imagen */
+  border-radius: 1px;
+}
+
+.img-barcode {
+  width: 253px;
+  height: 52px;
+  object-fit: cover;
+  margin: 25px auto 0;
+  border-radius: 1px;
+}
+
+.card-container {
+  /* da estilo al contenedor imagen */
+  padding: 16px; /* Espaciado interno para el contenido de la tarjeta */
+  flex: 1; /* Hace que el contenedor llene el espacio restante */
+  display: flex; /* Usa Flexbox */
+  flex-direction: column; /* Organiza los hijos en una columna */
+  justify-content: space-between; /* Centra el contenido verticalmente */
+}
+
+h3 {
+  font-size: 18px; /* Tamaño de la fuente para el título */
+  text-transform: uppercase;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 7px; /*margen de abajo "botton" del cuadro blanco */
+}
+
+.card-text {
+  font-size: 12px; /* Tamaño de la fuente para el texto */
+  color: #555; /* Color del texto */
+  flex: 1; /* Permite que el texto llene el espacio disponible, empujando cualquier otro contenido hacia abajo */
+  margin-top: 13px; /* Añade espacio arriba de tu 'lista' */
+  text-transform: uppercase;
+  text-align: justify;
+  line-height: 180%;
+}
+
+.align-nen {
+  margin-right: 13px;
+}
+
+.align-ocupation {
+  margin-right: 17px;
+}
+
+.align-tec {
+  margin-right: 4px;
+}
