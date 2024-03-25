@@ -2,11 +2,19 @@
 
 export function filterOcupation(data, value) {
   const resultOcupation = data.filter(
-    (personaje) => personaje.facts.ocupation === value
+    (character) => character.facts.ocupation === value
   );
 
   console.log(resultOcupation);
   return resultOcupation;
+}
+
+export function filterNentype(data, value) {
+  const resultNentype = data.filter(
+    (nenType) => nenType.facts.nenType === value
+  );
+
+  return resultNentype;
 }
 
 export const example = () => {

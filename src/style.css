@@ -48,12 +48,6 @@ ul {
   justify-content: space-around; /* Distribuye el espacio entre y alrededor de los elementos de forma uniforme */
   padding: 0; /* Elimina el padding predeterminado */
 }
-
-h1 {
-  text-align: center;
-  font-size: xx-large;
-}
-
 footer {
   text-align: center;
   background-color: #000000;
@@ -159,6 +153,5 @@ h1 {
   }
   nav {
     height: 6em;
-    
   }
 }

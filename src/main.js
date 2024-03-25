@@ -1,6 +1,7 @@
 import { filterOcupation } from "./dataFunctions.js";
 import { renderItems } from "./view.js";
 import data from "./data/dataset.js";
+import { filterNentype } from "./dataFunctions.js";
 
 const searchRoot = document.getElementById("root");
 searchRoot.appendChild(renderItems(data));
@@ -19,4 +20,18 @@ selectfilterOcupation.addEventListener("change", function () {
     lista.remove();
   });
   searchRoot.appendChild(renderItems(resultSelection));
+});
+
+const selectfilterNentype = document.getElementById("filter-nen");
+
+selectfilterNentype.addEventListener("change", function () {
+  const optionfilterNentype = this.value;
+  const resultNenType = filterNentype(data, optionfilterNentype);
+
+  const ulList = document.querySelectorAll("ul");
+
+  ulList.forEach((lista) => {
+    lista.remove();
+  });
+  searchRoot.appendChild(renderItems(resultNenType));
 });
