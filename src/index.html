@@ -2,15 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <!--AQUÍ VAN ETIQUETAS META PARA RESPONSIVE DESIGN-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--AQUÍ VAN ETIQUETAS META PARA RESPONSIVE DESIGN?-->
     <title>Hunter X Verse</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header> 
-      <nav>
-      <h1>Hunter X Hunter </h1> <!--AGREGAR AQUÍ IMÁGEN DEL BANNER-->
-     
+      <h1>
+        <img src="https://images.squarespace-cdn.com/content/v1/587968df17bffc8c1eba164c/1485923627582-YIRCBAWBM76A9UUCWGM7/hunterxhunter" alt="Hunter X Hunter" class="header-img">
+      </h1>
+      <nav> <!--Nico: 1 div con class="control-bar" que contiene toda la nav-bar-->   
         <label for="sort-by">Ordenar por: </label>
         <select name="sortBy" id="sort-by">
           <option value="" disabled selected>---</option>
@@ -37,7 +43,7 @@
           <option value="manipulation">Manipulación</option>
           <option value="specialization">Especialización</option>
         </select>
-        <!-- <label for="cleaner-button"></label> -->
+        
         <button id="cleaner-button">LIMPIAR FILTROS</button>
           <!--Recordar button para visualizar estadísticas-->
       </nav>
