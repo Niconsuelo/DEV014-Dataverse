@@ -1,8 +1,12 @@
 // Estas funciones son ejemplos, aquí puedes desarrollar tus propias funciones.
 
-export const example = () => {
-  return 'example';
-};
+export function filterOcupation(data, value) {
+  const resultOcupation = data.filter(
+    (character) => character.facts.ocupation === value
+  );
+
+  return resultOcupation;
+}
 
 export const anotherExample = () => {
   return [];

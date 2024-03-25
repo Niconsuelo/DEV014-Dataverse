@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--AQUÍ VAN ETIQUETAS META PARA RESPONSIVE DESIGN?-->
     <title>Hunter X Verse</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header> 
-      <h1>
-        <img src="https://images.squarespace-cdn.com/content/v1/587968df17bffc8c1eba164c/1485923627582-YIRCBAWBM76A9UUCWGM7/hunterxhunter" alt="Hunter X Hunter" class="header-img">
-      </h1>
-      <nav> <!--Nico: 1 div con class="control-bar" que contiene toda la nav-bar-->   
+    <header>
+      <h1></h1>
+      <!---no pueden haber imagenes en h1 -->
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/587968df17bffc8c1eba164c/1485923627582-YIRCBAWBM76A9UUCWGM7/hunterxhunter"
+        alt="Hunter X Hunter"
+        class="header-img"
+      />
+
+      <nav>
+        <!--Nico: 1 div con class="control-bar" que contiene toda la nav-bar-->
         <label for="sort-by">Ordenar por: </label>
         <select name="sortBy" id="sort-by">
           <option value="" disabled selected>---</option>
@@ -27,10 +36,10 @@
         <label for="filter-ocupation">Ocupación: </label>
         <select name="filterByOcupation" id="filter-ocupation">
           <option value="" disabled selected>Seleccionar</option>
-          <option value="cazador">Cazador</option>
-          <option value="hormigaQuimera">Hormiga Quimera</option>
-          <option value="asesino">Asesino</option>
-          <option value="brigadaFantasma">Brigada Fantasma</option>
+          <option value="Cazador">Cazador</option>
+          <option value="Hormiga quimera">Hormiga Quimera</option>
+          <option value="Asesino">Asesino</option>
+          <option value="Brigada Fantasma">Brigada Fantasma</option>
         </select>
 
         <label for="filter-nen">Tipo de Nen: </label>
@@ -43,15 +52,16 @@
           <option value="manipulation">Manipulación</option>
           <option value="specialization">Especialización</option>
         </select>
-        
+
         <button id="cleaner-button">LIMPIAR FILTROS</button>
-          <!--Recordar button para visualizar estadísticas-->
+        <!--Recordar button para visualizar estadísticas-->
       </nav>
     </header>
-    <main >
-      <h2 id="root"></h2>
+    <main id="root">
+      <h2></h2>
+      <!--- h2 solo puede tener texto, no deben tener hijos y root se mueve a main-->
     </main>
-    <footer> 2024 &copy; Hunter X Verse</footer>
+    <footer>2024 &copy; Hunter X Verse</footer>
     <script src="main.js" type="module"></script>
   </body>
 </html>
