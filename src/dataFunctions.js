@@ -9,11 +9,14 @@ export function filterData(data, filterby, value) {
   );
   return resultOcupation;
 }
-
+//declaramos funcion que posee los 3 parametros
 export function sortData(data, sortby, value) {
+  //condicion que permite definir si el select elegido tiene el mismo value (asc)
   if (value === "asc") {
     return data.sort((a, b) => a[sortby].localeCompare(b[sortby]));
   }
+    //condicion que permite definir si el select elegido tiene el mismo value (desc)
+
   if (value === "desc") {
     return data.sort((a, b) => b[sortby].localeCompare(a[sortby]));
   }
