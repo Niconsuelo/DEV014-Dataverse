@@ -12,7 +12,7 @@ const selectfilterOcupation = document.getElementById("filter-ocupation");
 
 // escuchador de eventos al valor, cuando este cambie segun la option del usuarix
 selectfilterOcupation.addEventListener("change", function () {
-  // se debe tener el valor actual del elemento que se selecciono (option)
+  // se debe tener el valor actual del elemento que se selecciono (option) this:obtiene el valor de la opcion seleccionada
   const optionFilter = this.value;
   //option filter, retornara el resultado del criterio segun la opcion que eligio el usuarix
 
@@ -27,7 +27,12 @@ selectfilterOcupation.addEventListener("change", function () {
   searchRoot.appendChild(renderItems(resultSelection));
 });
 
+const orderData = data;
+//sort permite ordenar pero no cambia
+//
+const ascName = orderData.sort((a, b) => a.name.localeCompare(b.name));
 
+console.log("Orden Ascendiente:", ascName);
 
 //console.log(example, renderItems(data), data);
 
