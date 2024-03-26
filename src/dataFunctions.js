@@ -15,7 +15,7 @@ export function sortData(data, sortby, value) {
   if (value === "asc") {
     return data.sort((a, b) => a[sortby].localeCompare(b[sortby]));
   }
-    //condicion que permite definir si el select elegido tiene el mismo value (desc)
+  //condicion que permite definir si el select elegido tiene el mismo value (desc)
 
   if (value === "desc") {
     return data.sort((a, b) => b[sortby].localeCompare(a[sortby]));
@@ -25,4 +25,3 @@ export function sortData(data, sortby, value) {
 export const anotherExample = () => {
   return [];
 };
-

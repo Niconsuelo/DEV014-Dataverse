@@ -48,7 +48,7 @@ orderCharacter.addEventListener("change", function (event) {
   //la data esta referenciada por eso se debe hacer un clon de data y no utilizar directamente una variable que tenga por valor data
   const newData = Array.from(data);
   //ejecutamos funcion que declaramos en datafunction
-  
+
   const resultORder = sortData(newData, "name", sortOrder);
 
   // reemplazando el contenido de root por vacio
@@ -61,16 +61,15 @@ orderCharacter.addEventListener("change", function (event) {
 
 const cleanerButton = document.getElementById("cleaner-button");
 cleanerButton.addEventListener("click", function () {
+  document.getElementById("filter-ocupation").value = "";
+  document.getElementById("filter-nen").value = "";
+  document.getElementById("sort-by").value = "";
 
-document.getElementById("filter-ocupation").value = '';
-document.getElementById("filter-nen").value = '';
-document.getElementById("sort-by").value = '';
-
-const root = document.querySelector("#root");
+  const root = document.querySelector("#root");
 
   root.innerHTML = "";
 
-searchRoot.appendChild(renderItems(data));
+  searchRoot.appendChild(renderItems(data));
 });
 
 //console.log(example, renderItems(data), data);

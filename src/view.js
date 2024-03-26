@@ -20,7 +20,6 @@ export const renderItems = (data) => {
     ul.innerHTML = ul.innerHTML + li; // Inserta cada tarjeta en el contenedor
   });
   return ul;
-  
 };
 
 //DE LN12 A LN15: PREGUNTAR POR CAMBIO DE ETIQUETAS: <p> PARA NOMBRE Y <ul> con <li> PARA ESTRUCTURAR LAS CARACTERISTICAS.
