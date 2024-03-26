@@ -16,7 +16,7 @@ selectfilterOcupation.addEventListener("change", function () {
   const optionFilter = this.value;
   //option filter, retornara el resultado del criterio segun la opcion que eligio el usuarix
 
-  const resultSelection = filterOcupation(data, 'ocupation', optionFilter);
+  const resultSelection = filterOcupation(data, "ocupation", optionFilter);
   //debemos eliminar elementos uno por uno de la interfaz
   const ulList = document.querySelectorAll("ul");
   // contiene todos los ul
@@ -26,6 +26,8 @@ selectfilterOcupation.addEventListener("change", function () {
   });
   searchRoot.appendChild(renderItems(resultSelection));
 });
+
+
 
 //console.log(example, renderItems(data), data);
 

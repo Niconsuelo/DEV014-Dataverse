@@ -9,7 +9,6 @@ export function filterOcupation(data, filterby, value) {
 }
 
 
-
 export const anotherExample = () => {
   return [];
 };
