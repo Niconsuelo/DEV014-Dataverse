@@ -15,7 +15,8 @@ selectfilterOcupation.addEventListener("change", function () {
   // se debe tener el valor actual del elemento que se selecciono (option)
   const optionFilter = this.value;
   //option filter, retornara el resultado del criterio segun la opcion que eligio el usuarix
-  const resultSelection = filterOcupation(data, 'ocupation', optionFilter);
+
+  const resultSelection = filterOcupation(data, "ocupation", optionFilter);
   //debemos eliminar elementos uno por uno de la interfaz
   const ulList = document.querySelectorAll("ul");
   // contiene todos los ul
