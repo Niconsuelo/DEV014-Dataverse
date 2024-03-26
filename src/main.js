@@ -1,4 +1,4 @@
-import { filterOcupation } from "./dataFunctions.js";
+import { filterData } from "./dataFunctions.js";
 import { renderItems } from "./view.js";
 import data from "./data/dataset.js";
 
@@ -11,12 +11,12 @@ searchRoot.appendChild(renderItems(data));
 const selectfilterOcupation = document.getElementById("filter-ocupation");
 
 // escuchador de eventos al valor, cuando este cambie segun la option del usuarix
-selectfilterOcupation.addEventListener("change", function () {
+selectfilterOcupation.addEventListener("change", function (event) {
   // se debe tener el valor actual del elemento que se selecciono (option)
-  const optionFilter = this.value;
+  const optionFilter = event.target.value; 
   //option filter, retornara el resultado del criterio segun la opcion que eligio el usuarix
 
-  const resultSelection = filterOcupation(data, "ocupation", optionFilter);
+  const resultSelection = filterData(data, "ocupation", optionFilter);
   //debemos eliminar elementos uno por uno de la interfaz
   const ulList = document.querySelectorAll("ul");
   // contiene todos los ul
