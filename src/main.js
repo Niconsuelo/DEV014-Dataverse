@@ -13,19 +13,19 @@ const selectfilterOcupation = document.getElementById("filter-ocupation");
 // escuchador de eventos al valor, cuando este cambie segun la option del usuarix
 selectfilterOcupation.addEventListener("change", function (event) {
   // se debe tener el valor actual del elemento que se selecciono (option)
-  const optionFilter = event.target.value; 
+  const optionFilter = event.target.value;
   //option filter, retornara el resultado del criterio segun la opcion que eligio el usuarix
 
   const resultSelection = filterData(data, "ocupation", optionFilter);
   //debemos eliminar elementos uno por uno de la interfaz
-  const ulList = document.querySelectorAll("ul");
+  const root = document.querySelector("#root");
   // contiene todos los ul
-  ulList.forEach((lista) => {
-    //eliminar elementos del listado de ul
-    lista.remove();
-  });
+  root.innerHTML = "";
+
   searchRoot.appendChild(renderItems(resultSelection));
 });
+
+
 
 //console.log(example, renderItems(data), data);
 

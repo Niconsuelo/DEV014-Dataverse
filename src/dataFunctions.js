@@ -12,6 +12,7 @@ export function filterData(data, filterby, value) {
   return resultOcupation;
 }
 
-export const anotherExample = () => {
-  return [];
-};
+
+// export const anotherExample = () => {
+//   return [];
+// };
