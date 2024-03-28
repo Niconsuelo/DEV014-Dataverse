@@ -1,4 +1,4 @@
-import { filterData, sortData } from "./dataFunctions.js";
+import { computeStats, filterData, sortData } from "./dataFunctions.js";
 import { renderItems } from "./view.js";
 import data from "./data/dataset.js";
 
@@ -39,3 +39,15 @@ cleanerButton.addEventListener("click", () => {
   searchRoot.innerHTML = "";
   searchRoot.appendChild(renderItems(data));
 });
+
+const statsSection = document.querySelector("#stats-section");
+const computeNenStats= computeStats(data);
+statsSection.innerHTML = `
+<dl class=""> Cantidad de personajes por tipo de Nen: 
+  <dt>Intensificación: </dt><dd>${computeNenStats.Intensificador}</dd>
+  <dt>Transmutación: </dt><dd>${computeNenStats.Transmutador}</dd>
+  <dt>Materialización: </dt><dd>${computeNenStats.Materializador}</dd>
+  <dt>Emisión: </dt><dd>${computeNenStats.Emisor}</dd>
+  <dt>Manipulación: </dt><dd>${computeNenStats.Manipulador}</dd>
+  <dt>Especialización: </dt><dd>${computeNenStats.Especialista}</dd>
+</dl>`;
