@@ -2,7 +2,7 @@ export const renderItems = (data) => {
   const ul = document.createElement("ul");
   data.forEach((character) => {
     const li = `
-      <li itemscope itemtype="Personaje" id=${character.id}>
+      <li class ="card-li" itemscope itemtype="Personaje" id=${character.id}>
         <div class="card">
           <div class="imgs-container"> 
             <img src=${character.imageUrl} alt=${character.name} class="card-img">
