@@ -66,6 +66,21 @@ button {
   border-radius: 15px;
 }
 
+#stats-button {
+  height: 2.5em;
+  width: 2.5em;
+  padding: 0%;
+  display: flex;
+  align-items: center;
+  background-color: #b11f1fde
+  /* background-color: #ff9900e0; */
+}
+
+.button-img {
+  width: fit-content;
+  height: 100%;
+}
+
 ul {
   margin: 3%;
   gap: 5%;
