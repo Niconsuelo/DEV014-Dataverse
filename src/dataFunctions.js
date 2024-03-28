@@ -17,3 +17,17 @@ export function sortData(data, sortBy, value) {
       desc[sortBy].localeCompare(asc[sortBy]));
   }
 }
+
+export function computeStats(data) {
+  const nenStats = data.reduce(function (obj, character) {
+    const nenType = character.facts.nenType;
+    if (!obj[nenType]) {
+      obj[nenType] = 1;
+    } else {
+      obj[nenType]++
+    }
+
+    return obj;
+  }, {});
+  return nenStats
+}

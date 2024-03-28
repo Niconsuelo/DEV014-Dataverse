@@ -81,7 +81,7 @@ export default [
     "description": "Wing es un maestro ayudante de Shingen Ryu Kung Fu, un antiguo estudiante de Biscuit Krueger, y un usuario experto de Nen. El primer encuentro de Gon y Killua con Wing y su estudiante Zushi fue cuando estaban compitiendo en el Coliseo del Cielo.  En un principio no les quiere rebelar el Nen, pero luego los acepta como estudiantes. Tras aceptarlos como estudiantes, Wing suavemente abre los nodos de aura de Gon y Killua y, viendo su capacidad y potencial, decide entrenarlos durante varios meses en el Coliseo del Cielo.",
     "imageUrl": "https://i.ibb.co/YpwHbQn/06yuutyo-bank-2.webp",
     "facts": {
-      "nenType": "Intensificación",
+      "nenType": "Intensificador",
       "ocupation": "Cazador",
       "species": "Humano",
     },
