@@ -1,9 +1,19 @@
 // Estas funciones son ejemplos, aquí puedes desarrollar tus propias funciones.
 
 export function filterData(data, filterby, value) {
-  const resultOcupation = data.filter(
+  const resultFilter = data.filter(
     (character) => character.facts[filterby] === value
   );
+  return resultFilter;
+}
 
-  return resultOcupation;
+export function sortData(data, sortBy, value) {
+  if (value === "asc") {
+    return data.sort((asc, desc) =>
+      asc[sortBy].localeCompare(desc[sortBy]));
+  } 
+  else if (value === "desc") {
+    return data.sort((asc, desc) =>
+      desc[sortBy].localeCompare(asc[sortBy]));
+  }
 }

@@ -1,4 +1,4 @@
-import { filterData } from "./dataFunctions.js";
+import { filterData, sortData } from "./dataFunctions.js";
 import { renderItems } from "./view.js";
 import data from "./data/dataset.js";
 
@@ -24,3 +24,12 @@ nenSelect.addEventListener("change", (e) => {
 
   searchRoot.appendChild(renderItems(filterByNen));
 });
+
+const sortSelect = document.getElementById("sort-by");
+sortSelect.addEventListener("change", function(event) {
+  const sortOrder = event.target.value;
+  const sortCards = sortData(data, "name", sortOrder);
+  searchRoot.innerHTML = "";
+  
+  searchRoot.appendChild(renderItems(sortCards));
+})
