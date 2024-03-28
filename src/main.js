@@ -31,11 +31,8 @@ const orderCharacter = document.getElementById("sort-by");
 orderCharacter.addEventListener("change", function (event) {
   //el event apunta al evento, este al selector y al valor de este
   const sortOrder = event.target.value;
-  //la data esta referenciada por eso se debe hacer un clon de data y no utilizar directamente una variable que tenga por valor data
-  const newData = Array.from(data);
-  //ejecutamos funcion que declaramos en datafunction
 
-  const resultORder = sortData(newData, "name", sortOrder);
+  const resultORder = sortData(data, "name", sortOrder);
 
   // reemplazando el contenido de root por vacio
   const root = document.querySelector("#root");
