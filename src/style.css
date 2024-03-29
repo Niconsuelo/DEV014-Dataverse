@@ -72,8 +72,11 @@ button {
   padding: 0%;
   display: flex;
   align-items: center;
-  background-color: #b11f1fde
-  /* background-color: #ff9900e0; */
+  justify-content: center;
+  background-color: #b11f1fde;
+  /* background-color: #ff9900e0; 
+  #
+  7554af*/
 }
 
 .button-img {
@@ -168,6 +171,43 @@ p3 {
   width: fit-content;
 }
 
+#stats-section {
+  margin: 0%;
+  padding: 0%;
+  border-style: dotted none none none;
+  border-color: #3f1fb1de;
+  background-image: radial-gradient(#3f1fb1de, whitesmoke);
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+h4 {
+padding: 1%;
+margin: 0%;
+height: fit-content;
+width: 100%;
+text-transform: uppercase;
+font-weight: 700;
+font-size: large;
+letter-spacing: 2px;
+/* background-color: #3f1fb1de; */
+color: whitesmoke;
+}
+
+dl {
+  padding: 2%;
+  list-style: none;
+  border: #0e0e0e;
+  border-radius: 15px;
+}
+
+dt {
+  font-weight: bold;
+}
+
 footer {
   text-align: center;
   background-color: #000000;
@@ -188,11 +228,11 @@ footer {
   
     }*/
   select,
-  button {
+  button, #stats-button {
     width: 100%;
   }
   nav {
-    height: 12em;
+    height: 15em;
     display: flex;
     flex-direction: column;
     width: 100%;

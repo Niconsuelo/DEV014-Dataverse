@@ -43,7 +43,8 @@ cleanerButton.addEventListener("click", () => {
 const statsSection = document.querySelector("#stats-section");
 const computeNenStats= computeStats(data);
 statsSection.innerHTML = `
-<dl class=""> Cantidad de personajes por tipo de Nen: 
+<h4>✧ Cantidad de personajes por tipo de Nen ✧</h4>
+<dl> 
   <dt>Intensificación: </dt><dd>${computeNenStats.Intensificador}</dd>
   <dt>Transmutación: </dt><dd>${computeNenStats.Transmutador}</dd>
   <dt>Materialización: </dt><dd>${computeNenStats.Materializador}</dd>
