@@ -6,24 +6,42 @@ const searchRoot = document.querySelector("#root");
 searchRoot.appendChild(renderItems(data));
 
 const selectfilterOcupation = document.querySelector("#filter-ocupation");
+const nenSelect = document.querySelector("#filter-nen");
+const sortSelect = document.querySelector("#sort-by");
 
 selectfilterOcupation.addEventListener("change", function (event) {
+  //variable que tendra todos los resultados de los filtros.
+  //dataset es un arreglo por ende debe ser un arreglo
+  let result = [];
+  //va a tener el selector elegido del primer filtro
   const optionFilter = event.target.value;
-  const resultSelection = filterData(data, "ocupation", optionFilter);
+  //result contendra el primer filtro
+  result = filterData(data, "ocupation", optionFilter); //resultado del primer filtro
+  //va a tener el selector del segundo filtro
+  const nenTypeSelect = nenSelect.value;
+  //si el selector tiene informacion, entrará
+  if (nenTypeSelect !== "") {
+    // result tendra el resultado del segundo filtro, y dentro de este filtro
+    // se filtrara el primer resultado result
+    result = filterData(result, "nenType", nenTypeSelect); //
+  }
   const root = document.querySelector("#root");
   root.innerHTML = "";
-  searchRoot.appendChild(renderItems(resultSelection));
+  searchRoot.appendChild(renderItems(result));
 });
 
-const nenSelect = document.querySelector("#filter-nen");
 nenSelect.addEventListener("change", (e) => {
-  const filterByNen = filterData(data, "nenType", e.target.value);
+  let result = [];
+  result = filterData(data, "nenType", e.target.value);
+  const ocupationSelect = selectfilterOcupation.value;
+  if (ocupationSelect !== "") {
+    result = filterData(result, "ocupation", ocupationSelect);
+  }
   searchRoot.innerHTML = "";
-  searchRoot.appendChild(renderItems(filterByNen));
+  searchRoot.appendChild(renderItems(result));
 });
 
-const sortSelect = document.querySelector("#sort-by");
-sortSelect.addEventListener("change", function(event) {
+sortSelect.addEventListener("change", function (event) {
   const sortOrder = event.target.value;
   const originalData = Array.from(data);
   const sortCards = sortData(originalData, "name", sortOrder);
@@ -31,7 +49,7 @@ sortSelect.addEventListener("change", function(event) {
   searchRoot.appendChild(renderItems(sortCards));
 });
 
-const cleanerButton = document.querySelector('#cleaner-button');
+const cleanerButton = document.querySelector("#cleaner-button");
 cleanerButton.addEventListener("click", () => {
   selectfilterOcupation.value = "";
   nenSelect.value = "";
@@ -41,7 +59,7 @@ cleanerButton.addEventListener("click", () => {
 });
 
 const statsSection = document.querySelector("#stats-section");
-const computeNenStats= computeStats(data);
+const computeNenStats = computeStats(data);
 statsSection.innerHTML = `
 <dl class=""> Cantidad de personajes por tipo de Nen: 
   <dt>Intensificación: </dt><dd>${computeNenStats.Intensificador}</dd>
