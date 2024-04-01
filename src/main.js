@@ -67,6 +67,11 @@ cleanerButton.addEventListener("click", () => {
   searchRoot.appendChild(renderItems(data));
 });
 
+const statButton = document.querySelector("#stats-button");
+statButton.addEventListener("click", function () {
+  window.location.href = "index.html#stats-section";
+});
+
 const statsSection = document.querySelector("#stats-section");
 const computeNenStats = computeStats(data);
 statsSection.innerHTML = `
