@@ -61,9 +61,9 @@ En la pantalla principal, se encuentra una vista general de la aplicación, la c
 1.  Acceso a 24 personajes con sus características específicas.
 2. Acceso rápido a estadística computada del ítem de tipo de nen.
 3. Acceso a barra de filtros, en donde se podrá manipular de acuerdo al criterio del usuario:
-    <summary><p> Ordenar por Asc - Desc. </summary><p>
-    <summary><p> Filtrar en base a la ocupación del personaje dentro del anime. </summary><p>
-    <summary><p> Filtrar en base al tipo de nen del personaje dentro del anime. </summary><p>
+    * Ordenar por Asc - Desc. 
+    * Filtrar en base a la ocupación del personaje dentro del anime. 
+    * Filtrar en base al tipo de nen del personaje dentro del anime. 
 
 ***
 
