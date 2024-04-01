@@ -41,7 +41,7 @@ Según las necesidades de los usuarios de [HunterxVerse](http://localhost:3000),
 
 * [Historia de usuario Nº3](https://docs.google.com/document/d/11WLqt38r5q2c5ZTzPR82NmNhJ8B3qL5XQbCQd5V6mF4/edit).
 
-* [Historia de usuario Nº3](https://docs.google.com/document/d/12QlJwmcYs10GeZy_1TwMqsRPbyle6XM3DbcfGcA_gNE/edit).
+* [Historia de usuario Nº4](https://docs.google.com/document/d/12QlJwmcYs10GeZy_1TwMqsRPbyle6XM3DbcfGcA_gNE/edit).
 
 ***
 ## User interface
@@ -67,4 +67,4 @@ En la pantalla principal, se encuentra una vista general de la aplicación, la c
 
 ***
 
-**2024 &copy; Hunter X Verse**
+**MilNic &copy; Hunter X Verse**
