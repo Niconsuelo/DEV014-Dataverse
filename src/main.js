@@ -8,28 +8,54 @@ searchRoot.appendChild(renderItems(data));
 const selectfilterOcupation = document.querySelector("#filter-ocupation");
 const nenSelect = document.querySelector("#filter-nen");
 const sortSelect = document.querySelector("#sort-by");
-let result = data;
 
 selectfilterOcupation.addEventListener("change", function (event) {
-  //va a tener el selector elegido del primer filtro
+  let result = [];
   const optionFilter = event.target.value;
-  //result contendra el primer filtro
-  result = filterData(result, "ocupation", optionFilter); //resultado del primer filtro
-  //va a tener el selector del segundo filtro
+  result = filterData(data, "ocupation", optionFilter);
+  const nenTypeSelect = nenSelect.value;
+
+  if (nenTypeSelect !== "") {
+    result = filterData(result, "nenType", nenTypeSelect);
+  }
+  const sortSelection = sortSelect.value;
+  if (sortSelection !== "") {
+    result = sortData(result, "name", sortSelection);
+  }
+
   const root = document.querySelector("#root");
   root.innerHTML = "";
   searchRoot.appendChild(renderItems(result));
 });
 
 nenSelect.addEventListener("change", (e) => {
-  result = filterData(result, "nenType", e.target.value);
+  let result = [];
+  result = filterData(data, "nenType", e.target.value);
+  const ocupationSelect = selectfilterOcupation.value;
+  if (ocupationSelect !== "") {
+    result = filterData(result, "ocupation", ocupationSelect);
+  }
+  const sortSelection = sortSelect.value;
+  if (sortSelection !== "") {
+    result = sortData(result, "name", sortSelection);
+  }
   searchRoot.innerHTML = "";
   searchRoot.appendChild(renderItems(result));
 });
 
 sortSelect.addEventListener("change", function (event) {
+  let result = data;
+  const optionFilter = selectfilterOcupation.value;
+  if (optionFilter !== "") {
+    result = filterData(data, "ocupation", optionFilter);
+  }
+  const nenTypeSelect = nenSelect.value;
+  if (nenTypeSelect !== "") {
+    result = filterData(result, "nenType", nenTypeSelect);
+  }
+
   const sortOrder = event.target.value;
-  const originalData = Array.from(result);
+  const originalData = Array.from(result); 
   const sortCards = sortData(originalData, "name", sortOrder);
   searchRoot.innerHTML = "";
   searchRoot.appendChild(renderItems(sortCards));
