@@ -66,6 +66,24 @@ button {
   border-radius: 15px;
 }
 
+#stats-button {
+  height: 2.5em;
+  width: 2.5em;
+  padding: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b11f1fde;
+  /* background-color: #ff9900e0; 
+  #
+  7554af*/
+}
+
+.button-img {
+  width: fit-content;
+  height: 100%;
+}
+
 ul {
   margin: 3%;
   gap: 5%;
@@ -153,6 +171,48 @@ p3 {
   width: fit-content;
 }
 
+#stats-section {
+  margin: 0%;
+  padding: 0%;
+  background-color: whitesmoke;
+  color: #0e0e0e;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+h4 {
+padding: 1%;
+margin: 0%;
+height: fit-content;
+width: 100%;
+text-transform: uppercase;
+font-weight: bolder;
+font-size: large;
+letter-spacing: 2px;
+color: whitesmoke;
+-webkit-text-stroke: 2px #0e0e0e;
+/* background-color: #3f1fb1de; */
+background-image: url("https://is1-ssl.mzstatic.com/image/thumb/Bn-3VF2OtmhcC8KC93J9lg/1200x675mf.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+dl {
+  padding: 5%;
+  list-style: none;
+  border: #0e0e0e;
+  border-radius: 15px;
+  justify-content: center;
+  line-height: 1.5;
+}
+
+dt {
+  font-weight: bold;
+}
+
 footer {
   text-align: center;
   background-color: #000000;
@@ -173,11 +233,11 @@ footer {
   
     }*/
   select,
-  button {
+  button, #stats-button {
     width: 100%;
   }
   nav {
-    height: 12em;
+    height: 15em;
     display: flex;
     flex-direction: column;
     width: 100%;
