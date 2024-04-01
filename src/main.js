@@ -8,42 +8,28 @@ searchRoot.appendChild(renderItems(data));
 const selectfilterOcupation = document.querySelector("#filter-ocupation");
 const nenSelect = document.querySelector("#filter-nen");
 const sortSelect = document.querySelector("#sort-by");
+let result = data;
 
 selectfilterOcupation.addEventListener("change", function (event) {
-  //variable que tendra todos los resultados de los filtros.
-  //dataset es un arreglo por ende debe ser un arreglo
-  let result = [];
   //va a tener el selector elegido del primer filtro
   const optionFilter = event.target.value;
   //result contendra el primer filtro
-  result = filterData(data, "ocupation", optionFilter); //resultado del primer filtro
+  result = filterData(result, "ocupation", optionFilter); //resultado del primer filtro
   //va a tener el selector del segundo filtro
-  const nenTypeSelect = nenSelect.value;
-  //si el selector tiene informacion, entrará
-  if (nenTypeSelect !== "") {
-    // result tendra el resultado del segundo filtro, y dentro de este filtro
-    // se filtrara el primer resultado result
-    result = filterData(result, "nenType", nenTypeSelect); //
-  }
   const root = document.querySelector("#root");
   root.innerHTML = "";
   searchRoot.appendChild(renderItems(result));
 });
 
 nenSelect.addEventListener("change", (e) => {
-  let result = [];
-  result = filterData(data, "nenType", e.target.value);
-  const ocupationSelect = selectfilterOcupation.value;
-  if (ocupationSelect !== "") {
-    result = filterData(result, "ocupation", ocupationSelect);
-  }
+  result = filterData(result, "nenType", e.target.value);
   searchRoot.innerHTML = "";
   searchRoot.appendChild(renderItems(result));
 });
 
 sortSelect.addEventListener("change", function (event) {
   const sortOrder = event.target.value;
-  const originalData = Array.from(data);
+  const originalData = Array.from(result);
   const sortCards = sortData(originalData, "name", sortOrder);
   searchRoot.innerHTML = "";
   searchRoot.appendChild(renderItems(sortCards));
