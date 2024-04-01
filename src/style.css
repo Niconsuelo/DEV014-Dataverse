@@ -174,10 +174,8 @@ p3 {
 #stats-section {
   margin: 0%;
   padding: 0%;
-  border-style: dotted none none none;
-  border-color: #3f1fb1de;
-  background-image: radial-gradient(#3f1fb1de, whitesmoke);
-  color: whitesmoke;
+  background-color: whitesmoke;
+  color: #0e0e0e;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -190,18 +188,25 @@ margin: 0%;
 height: fit-content;
 width: 100%;
 text-transform: uppercase;
-font-weight: 700;
+font-weight: bolder;
 font-size: large;
 letter-spacing: 2px;
-/* background-color: #3f1fb1de; */
 color: whitesmoke;
+-webkit-text-stroke: 2px #0e0e0e;
+/* background-color: #3f1fb1de; */
+background-image: url("https://is1-ssl.mzstatic.com/image/thumb/Bn-3VF2OtmhcC8KC93J9lg/1200x675mf.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+
 }
 
 dl {
-  padding: 2%;
+  padding: 5%;
   list-style: none;
   border: #0e0e0e;
   border-radius: 15px;
+  justify-content: center;
+  line-height: 1.5;
 }
 
 dt {
