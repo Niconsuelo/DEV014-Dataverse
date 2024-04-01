@@ -2,7 +2,7 @@
 # Hunter X Verse
 ## Overview
 
-[HunterxVerse](http://localhost:3000/#stats-section), plataforma informativa que permite a usuarios objetivos a acceder rápidamente a información detallada y organizada en el complejo universo del anime "Hunter x Hunter".
+[HunterxVerse](http://localhost:3000), plataforma informativa que permite a usuarios objetivos a acceder rápidamente a información detallada y organizada en el complejo universo del anime "Hunter x Hunter".
 
 En base a las necesidades del usuario objetivo y el deseo de explorar en profundidad los matices y detalles de la serie, se ha desarrollado una APP que permite visualizar 24 personajes principales del anime con características específicas basada en el proceso investigativo siendo como resultado, la creación de un contenido estratégicamente diseñado para enriquecer la experiencia del usuario utilizando elementos de diseño que permiten envolverse en el mundo de Hunter X.
 
@@ -32,7 +32,7 @@ Como resultado, para optimizar la experiencia de usuario, se define en base a es
 
 ## User stories 
 
-Según las necesidades de los usuarios de [HunterxVerse](http://localhost:3000/#stats-section), y la perspectiva en cuanto su funcionalidad, se detallan 4 historias de usuarios que permiten obtener una explicación a los requerimientos:
+Según las necesidades de los usuarios de [HunterxVerse](http://localhost:3000), y la perspectiva en cuanto su funcionalidad, se detallan 4 historias de usuarios que permiten obtener una explicación a los requerimientos:
 
  
 * [Historia de usuario Nº1](https://docs.google.com/document/d/1v2muuZXOKxrelo2yIPBQc5fILdFWjPp1_wbJk3ecUEI/edit).
@@ -52,7 +52,7 @@ Para ello, se ha utilizado herramienta de diseño Figma para crear el [prototipo
 
 ***
 ## Web application use
-En función a crear una mejor experiencia de usuario, se han definido los siguientes instrucciones de uso para utilizar [HunterxVerse](http://localhost:3000/#stats-section).
+En función a crear una mejor experiencia de usuario, se han definido los siguientes instrucciones de uso para utilizar [HunterxVerse](http://localhost:3000).
 
 En la pantalla principal, se encuentra una vista general de la aplicación, la cual contendrá:
 
