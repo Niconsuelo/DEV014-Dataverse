@@ -12,7 +12,7 @@ En base a las necesidades del usuario objetivo y el deseo de explorar en profund
 
 La definición de los componentes que estructuran la aplicación se diseñó manipulando diferentes plataformas de inteligencia artificial, utilizando técnicas de prompting para lograr un resultado que logrará satisfacer las necesidades del usuario.
 
-![prompting](https://i.ibb.co/3fpBF99/image.png)
+![prompting](https://i.ibb.co/nzcj8cf/Whats-App-Image-2024-04-02-at-00-57-53.jpg)
 
 Como resultado, para optimizar la experiencia de usuario, se define en base a este research visualizar únicos 3 componentes críticos de información, los cuales han sido identificados como esenciales para satisfacer las consultas y el interés de los usuarios:
 
