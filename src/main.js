@@ -75,6 +75,7 @@ statButton.addEventListener("click", function () {
 const statsSection = document.querySelector("#stats-section");
 const computeNenStats = computeStats(data);
 statsSection.innerHTML = `
+<h4 id="stats-h">Cantidad de personajes por tipo de Nen</h4>
 <div class="stats-box">
 <dl> 
   <dt>Intensificación: </dt><dd>${computeNenStats.Intensificador}</dd>
