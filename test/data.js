@@ -1,4 +1,4 @@
-// Aqui puedes agregar los datos que necesites para tus pruebas
+// Aqui puedes agregar los datos que necesites para tus pruebas jest
 // al menos debe tener uno que se llame "data"
 export const data = [
   {
@@ -33,6 +33,57 @@ export const data = [
     },
     extraInfo: {
       abilities: ["Skill hunter"],
+    },
+  },
+  {
+    id: "03-killua",
+    name: "Killua Zoldyck",
+    shortDescription:
+      "Es el coprotagonista y mejor amigo de Gon Freecss. Es el tercero de los cinco hijos de la familia Zoldyck.",
+    description:
+      "Killua Zoldyck es el tercer hijo de la conocida familia de asesinos Zoldyck. Para escapar de la herencia-mandato familiar, huye de su hogar y, por pasar el rato, llega al examen de Cazador, donde conoce a Gon. Pese a su buen rendimiento durante la prueba, por determinadas circunstancias, Killua no concluye su examen junto a Gon, mas obtiene su licencia de cazador un año después. Posee una agilidad extraordinaria y una fuerza que lo vuelven una máquina de matar. Aunque trate de esconderlo, siente afecto por Gon, ya que él fue la primera persona en interesarse genuinamente por él.",
+    imageUrl: "https://i.ibb.co/bbm5yfw/279aa6ae9fe65c86c5bd04c9443b098c.jpg",
+    facts: {
+      nenType: "Transmutador",
+      ocupation: "Cazador",
+      species: "Humano",
+    },
+    extraInfo: {
+      abilities: ["Transformación eléctrica"],
+    },
+  },
+  {
+    id: "04-leorio",
+    name: "Leorio Paladiknight",
+    shortDescription:
+      "Es un cazador novato y actualmente es estudiante de medicina. Es uno de los cuatro coprotagonistas.",
+    description:
+      "Leorio Paladiknight es un joven que aspira convertirse en cazador para poder pagar sus estudios de medicina. Pese a que se desconoce mucho acerca de Leorio, se sabe que una vez perdió un amigo cercano, Pietro, por una enfermedad debilitante. Leorio siente remordimiento por no poder salvar a su amigo, ya que aunque la enfermedad era curable, requería de una cirugía que no era capaz de costear. Así pues, aspira a convertirse en un médico para ayudar a aquellos que no puedan pagarlo. Impulsivo, fuerte y temerario, es un leal y confiable aliado que valora mucho los lazos de amistad.",
+    imageUrl: "https://i.ibb.co/nmyhYmr/wp7109874.jpg",
+    facts: {
+      nenType: "Emisor",
+      ocupation: "Cazdor",
+      species: "Humano",
+    },
+    extraInfo: {
+      abilities: ["Remote punch"],
+    },
+  },
+  {
+    id: "05-hisoka",
+    name: "Hisoka Morow",
+    shortDescription: "Es un Cazador y antiguo miembro de la Brigada Fantasma.",
+    description:
+      "Su talento y habilidad lo han convertido en alguien realmente confiado de sí mismo. Únicamente mira por sus intereses, haciendo así lo que le place cuando y cuanto quiere, sin seguir ninguna norma o lazo emocional. Pareciera que su gran motivación es la de derrotar oponentes elegidos según sus propios criterios, llegando al punto de esperar pacientemente por obtener un rival que considere digno (Gon, Killua, Kalluto, etc), que supere, o podrá superar en un futuro, sus habilidades. Asimismo, Hisoka se une temporalmente a la Brigada Fantasma, para tener la oportunidad de luchar contra el líder del grupo, Chrollo Lucilfer.",
+    imageUrl:
+      "https://i.ibb.co/Jv3psNR/58596-Hisoka-Hunter-Hunter-Hisoka-Hunter-Hunter-HD.jpg",
+    facts: {
+      nenType: "Transmutador",
+      ocupation: "Cazador",
+      species: "Humano",
+    },
+    extraInfo: {
+      abilities: ["Textura engañosa", "Goma Bungee"],
     },
   },
 ];
