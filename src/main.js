@@ -69,18 +69,21 @@ cleanerButton.addEventListener("click", () => {
 
 const statButton = document.querySelector("#stats-button");
 statButton.addEventListener("click", function () {
-  window.location.href = "index.html#stats-section";
+  window.location.href = "index.html#stats-h";
 });
 
 const statsSection = document.querySelector("#stats-section");
 const computeNenStats = computeStats(data);
 statsSection.innerHTML = `
-<h4>Cantidad de personajes por tipo de Nen</h4>
+<h4 id="stats-h">Cantidad de personajes por tipo de Nen</h4>
+<div class="stats-box">
 <dl> 
   <dt>Intensificación: </dt><dd>${computeNenStats.Intensificador}</dd>
   <dt>Transmutación: </dt><dd>${computeNenStats.Transmutador}</dd>
   <dt>Materialización: </dt><dd>${computeNenStats.Materializador}</dd>
+</dl><dl>  
   <dt>Emisión: </dt><dd>${computeNenStats.Emisor}</dd>
   <dt>Manipulación: </dt><dd>${computeNenStats.Manipulador}</dd>
   <dt>Especialización: </dt><dd>${computeNenStats.Especialista}</dd>
-</dl>`;
+</dl>
+</div>`;
