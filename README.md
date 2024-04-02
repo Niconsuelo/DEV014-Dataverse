@@ -50,9 +50,11 @@ Este enfoque nos ha permitido capturar y traducir los requerimientos de los usua
 ***
 ## User interface
 
-El enfoque del desarrollo de la interfaz de usuario para este proyecto se baso principalmente en entregar una APP atractiva y eficaz para los usuarios objetivos, es por ello que se ha tomado la investigación previa como punto de inicio para crear una interfaz entorno al mundo de Hunter x Hunter, utilizando elementos de diseño  que mantienen la esencia del anime.
+El enfoque del desarrollo de la interfaz de usuario para este proyecto se baso principalmente en entregar una APP atractiva y eficaz para los usuarios objetivos, es por ello que se ha tomado la investigación previa como punto de inicio para crear una interfaz entorno al mundo de Hunter x Hunter, utilizando elementos de diseño que mantienen la esencia del anime.
 
-Para ello, se ha utilizado herramienta de diseño Figma para crear el [prototipo de alta fidelidad](https://drive.google.com/file/d/1mZESr8XMN2Drju59XUG7YYiPEWFDhVW_/view?usp=sharing).
+El método de diseño, en primera instancia, se estructura con componentes fundamentales caracteristicos de una interfaz de usuario. Inspirados por elementos distintivos del mundo de Hunter x Hunter se utiliza las [credenciales de cazador](https://i.ibb.co/ZhrKktn/latest-cb-20141224004916-path-prefix-es.png) como fuente primaria de inspiración, proceso que concluye con la concepción del prototipo inicial [prototipo inicia](https://drive.google.com/file/d/1rUd1QeUAItrzfP938grpAzSVZ9C03-T6/view?usp=sharing).
+
+Siguiendo retroalimentación de los usuarios, se implementaron ajustes significativos con el objetivo de optimizar la experiencia de usuario, asegurando que el producto final cumpla con las expectivas no solo de diseño, sino que también de funcionalidad. Producto de estas modificaciones, finalmente se obtuvo el [prototipo de alta fidelidad](https://drive.google.com/file/d/1mZESr8XMN2Drju59XUG7YYiPEWFDhVW_/view?usp=sharing), siendo este el último, utilizado para crear la interfaz final de proyecto.
 
 ***
 ## Web application use
