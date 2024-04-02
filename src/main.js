@@ -7,7 +7,7 @@ searchRoot.appendChild(renderItems(data));
 
 const selectfilterOcupation = document.querySelector("#filter-ocupation");
 const nenSelect = document.querySelector("#filter-nen");
-const sortSelect = document.querySelector("#sort-by");
+const sortSelect = document.querySelector("#select-sort");
 
 selectfilterOcupation.addEventListener("change", function (event) {
   let result = [];
