@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--AQUÍ VAN ETIQUETAS META PARA RESPONSIVE DESIGN?-->
     <title>Hunter X Verse</title>
     
+    <link rel="icon" href="https://github.com/MilenPG/DEV014-Dataverse/blob/main/src/assets/hxh-icon.png?raw=true" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,17 +25,16 @@
       />
 
       <nav>
-        <!--Nico: 1 div con class="control-bar" que contiene toda la nav-bar-->
         <label for="sort-by">Ordenar por: </label>
         <select name="sortBy" id="sort-by">
-          <option value="" disabled selected>---</option>
+          <option value="" disabled selected>Ordenar por</option>
           <option value="asc">Asc [A-Z]</option>
           <option value="desc">Desc [Z-A]</option>
         </select>
 
         <label for="filter-ocupation">Ocupación: </label>
         <select name="filterByOcupation" id="filter-ocupation">
-          <option value="" disabled selected>Seleccionar</option>
+          <option value="" disabled selected>Ocupación</option>
           <option value="Cazador">Cazador</option>
           <option value="Hormiga quimera">Hormiga Quimera</option>
           <option value="Asesino">Asesino</option>
@@ -44,7 +43,7 @@
 
         <label for="filter-nen">Tipo de Nen: </label>
         <select name="filterByNen" id="filter-nen">
-          <option value="" disabled selected>Seleccionar</option>
+          <option value="" disabled selected>Tipo de Nen</option>
           <option value="Intensificador">Intensificación</option>
           <option value="Transmutador">Transmutación</option>
           <option value="Materializador">Materialización</option>
@@ -56,12 +55,12 @@
         <button id="stats-button">
           <img src="https://static.wikia.nocookie.net/villains/images/1/19/The_Phantom_Troupe_Logo.png/" 
           alt="spider-button" class="button-img"></button>
-       
-        <!--Recordar button para visualizar estadísticas-->
       </nav>
     </header>
+    
     <main>
       <div id="root"></div>
+      <h4 id="stats-h">Cantidad de personajes por tipo de Nen</h4>
       <section id="stats-section"></section>
     </main>
     <footer>2024 &copy; Hunter X Verse</footer>
