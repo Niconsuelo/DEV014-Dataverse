@@ -2,7 +2,7 @@
 # Hunter X Verse
 ## Overview
 
-[HunterxVerse](https://milenpg.github.io/DEV014-Dataverse/), plataforma informativa interactiva, que permite a usuarios objetivos a acceder rápidamente a información detallada y organizada en el complejo universo del anime ["Hunter x Hunter"](https://es.wikipedia.org/wiki/Hunter_%C3%97_Hunter).
+[HunterxVerse](https://milenpg.github.io/DEV014-Dataverse/src/), plataforma informativa interactiva, que permite a usuarios objetivos a acceder rápidamente a información detallada y organizada en el complejo universo del anime ["Hunter x Hunter"](https://es.wikipedia.org/wiki/Hunter_%C3%97_Hunter).
 
 En base a las necesidades del usuario objetivo y el deseo de explorar en profundidad los matices y detalles de la serie, se ha desarrollado una APP que permite visualizar 24 personajes principales del anime con características específicas basada en el proceso investigativo siendo como resultado, la creación de un contenido estratégicamente diseñado para enriquecer la experiencia del usuario utilizando elementos de diseño que permiten envolverse en el mundo de Hunter x Hunter.
 
@@ -33,7 +33,7 @@ Estas descripciones han sido identificados como esenciales para satisfacer las c
 
 ## User stories 
 
-Según las necesidades de los usuarios de [HunterxVerse](https://milenpg.github.io/DEV014-Dataverse/), y la perspectiva en cuanto su funcionalidad, se detallan 4 historias de usuarios que permiten obtener una explicación a los requerimientos:
+Según las necesidades de los usuarios de [HunterxVerse](https://milenpg.github.io/DEV014-Dataverse/src/), y la perspectiva en cuanto su funcionalidad, se detallan 4 historias de usuarios que permiten obtener una explicación a los requerimientos:
 
  
 * [Historia de usuario Nº1](https://docs.google.com/document/d/1v2muuZXOKxrelo2yIPBQc5fILdFWjPp1_wbJk3ecUEI/edit).
@@ -58,13 +58,13 @@ Siguiendo retroalimentación de los usuarios, se implementaron ajustes significa
 
 ***
 ## Web application use
-En función a crear una mejor experiencia de usuario, se han definido los siguientes instrucciones de uso para utilizar [HunterxVerse](https://milenpg.github.io/DEV014-Dataverse/).
+En función a crear una mejor experiencia de usuario, se han definido los siguientes instrucciones de uso para utilizar [HunterxVerse](https://milenpg.github.io/DEV014-Dataverse/src/).
 
 En la pantalla principal, se encuentra una vista general de la aplicación, la cual contendrá:
 
 1. Vista general de la aplicación
 2. Acceso a 24 personajes con sus características específicas.
-3. Acceso rápido a [estadística computada](https://milenpg.github.io/DEV014-Dataverse/#stats-section) del ítem de tipo de nen.
+3. Acceso rápido a [estadística computada](https://milenpg.github.io/DEV014-Dataverse/src/#stats-section) del ítem de tipo de nen.
 4. Acceso a barra de filtros, en donde se podrá manipular de acuerdo al criterio del usuario:
     * Ordenar por Asc - Desc. 
     * Filtrar en base a la ocupación del personaje dentro del anime. 
